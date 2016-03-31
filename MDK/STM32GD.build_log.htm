@@ -1,0 +1,93 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\GD_CODE\MDK\STM32GD.uvproj
+Project File Date:  04/15/2014
+
+<h2>Output:</h2>
+compiling main.c...
+..\USER\main.c(40): error:  #20: identifier "ADC_InitTypeDef" is undefined
+  ADC_InitTypeDef ADC_InitStructure;
+..\USER\main.c(41): error:  #20: identifier "DMA_InitTypeDef" is undefined
+  DMA_InitTypeDef DMA_InitStructure;
+..\USER\main.c(71): warning:  #223-D: function "DMA_DeInit" declared implicitly
+    DMA_DeInit(DMA1_Channel1);
+..\USER\main.c(74): error:  #20: identifier "DMA_DIR_PeripheralSRC" is undefined
+    DMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralSRC;
+..\USER\main.c(76): error:  #20: identifier "DMA_PeripheralInc_Disable" is undefined
+    DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
+..\USER\main.c(77): error:  #20: identifier "DMA_MemoryInc_Disable" is undefined
+    DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Disable;
+..\USER\main.c(78): error:  #20: identifier "DMA_PeripheralDataSize_HalfWord" is undefined
+    DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_HalfWord;
+..\USER\main.c(79): error:  #20: identifier "DMA_MemoryDataSize_HalfWord" is undefined
+    DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_HalfWord;
+..\USER\main.c(80): error:  #20: identifier "DMA_Mode_Circular" is undefined
+    DMA_InitStructure.DMA_Mode = DMA_Mode_Circular;
+..\USER\main.c(81): error:  #20: identifier "DMA_Priority_High" is undefined
+    DMA_InitStructure.DMA_Priority = DMA_Priority_High;
+..\USER\main.c(82): error:  #20: identifier "DMA_M2M_Disable" is undefined
+    DMA_InitStructure.DMA_M2M = DMA_M2M_Disable;
+..\USER\main.c(83): warning:  #223-D: function "DMA_Init" declared implicitly
+    DMA_Init(DMA1_Channel1, &DMA_InitStructure);
+..\USER\main.c(86): warning:  #223-D: function "DMA_Cmd" declared implicitly
+    DMA_Cmd(DMA1_Channel1, ENABLE);
+..\USER\main.c(89): error:  #20: identifier "ADC_Mode_Independent" is undefined
+    ADC_InitStructure.ADC_Mode = ADC_Mode_Independent;
+..\USER\main.c(92): error:  #20: identifier "ADC_ExternalTrigConv_None" is undefined
+    ADC_InitStructure.ADC_ExternalTrigConv = ADC_ExternalTrigConv_None;
+..\USER\main.c(93): error:  #20: identifier "ADC_DataAlign_Right" is undefined
+    ADC_InitStructure.ADC_DataAlign = ADC_DataAlign_Right;
+..\USER\main.c(95): warning:  #223-D: function "ADC_Init" declared implicitly
+    ADC_Init(ADC1, &ADC_InitStructure);
+..\USER\main.c(98): warning:  #223-D: function "ADC_RegularChannelConfig" declared implicitly
+    ADC_RegularChannelConfig(ADC1, ADC_Channel_14, 1, ADC_SampleTime_55Cycles5);
+..\USER\main.c(98): error:  #20: identifier "ADC_Channel_14" is undefined
+    ADC_RegularChannelConfig(ADC1, ADC_Channel_14, 1, ADC_SampleTime_55Cycles5);
+..\USER\main.c(98): error:  #20: identifier "ADC_SampleTime_55Cycles5" is undefined
+    ADC_RegularChannelConfig(ADC1, ADC_Channel_14, 1, ADC_SampleTime_55Cycles5);
+..\USER\main.c(101): warning:  #223-D: function "ADC_DMACmd" declared implicitly
+    ADC_DMACmd(ADC1, ENABLE);
+..\USER\main.c(104): warning:  #223-D: function "ADC_Cmd" declared implicitly
+    ADC_Cmd(ADC1, ENABLE);
+..\USER\main.c(107): warning:  #223-D: function "ADC_ResetCalibration" declared implicitly
+    ADC_ResetCalibration(ADC1);
+..\USER\main.c(109): warning:  #223-D: function "ADC_GetResetCalibrationStatus" declared implicitly
+    while(ADC_GetResetCalibrationStatus(ADC1));
+..\USER\main.c(112): warning:  #223-D: function "ADC_StartCalibration" declared implicitly
+    ADC_StartCalibration(ADC1);
+..\USER\main.c(114): warning:  #223-D: function "ADC_GetCalibrationStatus" declared implicitly
+    while(ADC_GetCalibrationStatus(ADC1));
+..\USER\main.c(117): warning:  #223-D: function "ADC_SoftwareStartConvCmd" declared implicitly
+    ADC_SoftwareStartConvCmd(ADC1, ENABLE);
+..\USER\main.c(136): warning:  #223-D: function "RCC_ADCCLKConfig" declared implicitly
+    RCC_ADCCLKConfig(RCC_PCLK2_Div4); 
+..\USER\main.c(136): error:  #20: identifier "RCC_PCLK2_Div4" is undefined
+    RCC_ADCCLKConfig(RCC_PCLK2_Div4); 
+..\USER\main.c(140): warning:  #223-D: function "RCC_AHBPeriphClockCmd" declared implicitly
+    RCC_AHBPeriphClockCmd(RCC_AHBPeriph_DMA1, ENABLE);
+..\USER\main.c(140): error:  #20: identifier "RCC_AHBPeriph_DMA1" is undefined
+    RCC_AHBPeriphClockCmd(RCC_AHBPeriph_DMA1, ENABLE);
+..\USER\main.c(143): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC1 | RCC_APB2Periph_GPIOC, ENABLE);
+..\USER\main.c(143): error:  #20: identifier "RCC_APB2Periph_ADC1" is undefined
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC1 | RCC_APB2Periph_GPIOC, ENABLE);
+..\USER\main.c(143): error:  #20: identifier "RCC_APB2Periph_GPIOC" is undefined
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC1 | RCC_APB2Periph_GPIOC, ENABLE);
+..\USER\main.c(153): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+    GPIO_InitTypeDef GPIO_InitStructure;
+..\USER\main.c(156): error:  #20: identifier "GPIO_Pin_4" is undefined
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4;
+..\USER\main.c(157): error:  #20: identifier "GPIO_Mode_AIN" is undefined
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AIN;
+..\USER\main.c(158): warning:  #223-D: function "GPIO_Init" declared implicitly
+    GPIO_Init(GPIOC, &GPIO_InitStructure);
+..\USER\main.c: 16 warnings, 22 errors
+"..\USER\main.c" - 22 Error(s), 16 Warning(s).
+compiling main.c...
+..\USER\main.c(24): error:  #5: cannot open source input file "stm32f10x_adc.h": No such file or directory
+  #include "stm32f10x_adc.h"
+..\USER\main.c: 0 warnings, 1 error
+"..\USER\main.c" - 1 Error(s), 0 Warning(s).
